@@ -62,7 +62,7 @@ public class Order {
         return sum;
     }
 
-    public void OrderItems(){
+    public void orderItems(){
         for (OrderItem i : items){
             System.out.println(i.toString());
         }

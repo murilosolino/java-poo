@@ -56,7 +56,7 @@ public class MainOrder {
         System.out.println("Order status: " + order.getStatus());
         System.out.println("Client: " + client.getName() + " " + client.getBirthDate() + " - " + client.getEmail());
         System.out.println("Order Items: ");
-        order.OrderItems();
+        order.orderItems();
         System.out.println("Total Price: " + order.total());
         sc.close();
     }
