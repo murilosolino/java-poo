@@ -1,6 +1,7 @@
 package herancaPolimorfismo.entities;
 
-public class SavingAccount extends Account {
+/*Quando uma classe ou metodo possuem 'final' na declaracao, significa que eles nao podem ser herdados nem sobreescritos*/
+public final class SavingAccount extends Account {
 
     private double interestRate;
 
@@ -30,5 +31,10 @@ public class SavingAccount extends Account {
 
     public void updateBalance(){
         balance += balance * interestRate;
+    }
+
+    @Override
+    public void withdraw(double amount){
+        balance-=amount;
     }
 }
