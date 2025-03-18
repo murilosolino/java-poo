@@ -2,6 +2,7 @@ package herancaPolimorfismo.polimorfismo.exercicio.application;
 
 import herancaPolimorfismo.polimorfismo.exercicio.entities.*;
 
+import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ public class ProgramProduct {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         List<Product> products = new ArrayList<>();
+        DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         System.out.print("Enter the numbers of products: ");
         int nProducts = sc.nextInt();
@@ -40,7 +42,8 @@ public class ProgramProduct {
             } else if (CUI == 'u') {
                 System.out.print("\nManufacture Date (dd/MM/yyyy): ");
                 String manufactureDate = sc.next();
-                Product product = new UsedProduct(name, price, LocalDate.parse(manufactureDate, DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+                LocalDate date = LocalDate.parse(manufactureDate, fmt1);
+                Product product = new UsedProduct(name, price, date);
                 products.add(product);
             } else {
                 Product product = new Product(name, price);

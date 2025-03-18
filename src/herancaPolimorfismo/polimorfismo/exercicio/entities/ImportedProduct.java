@@ -21,11 +21,11 @@ public class ImportedProduct extends Product{
 
     @Override
     public String priceTag() {
-        totalPrice();
-        return super.priceTag() + " (Custom fee: $ " + customFee + " )";
+        double total = totalPrice();
+        return super.getName() + " $ "+ total  + " (Custom fee: $ " + customFee + " )";
     }
 
-    public void totalPrice(){
-         super.setPrice(super.getPrice() + customFee);
+    public double totalPrice(){
+        return super.getPrice() + customFee;
     }
 }

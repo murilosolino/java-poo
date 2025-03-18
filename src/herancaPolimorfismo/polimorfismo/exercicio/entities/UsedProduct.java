@@ -1,6 +1,7 @@
 package herancaPolimorfismo.polimorfismo.exercicio.entities;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public final class UsedProduct extends Product{
 
@@ -22,8 +23,9 @@ public final class UsedProduct extends Product{
     }
 
     @Override
-    public String priceTag(){
-        return super.getName() + " (used) " + super.getPrice() +
-                " Manufacture date: " + manufactureDate;
+    public String priceTag() {
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return super.getName() + " (used) $ " + String.format("%.2f", super.getPrice()) + " (Manufacture date: " + manufactureDate.format(fmt) + ")";
     }
+
 }
