@@ -52,5 +52,7 @@ public class Program {
         }
 
         System.out.println("Total Taxes: $ " + String.format("%.2f", totalTaxes));
+
+        sc.close();
     }
 }
