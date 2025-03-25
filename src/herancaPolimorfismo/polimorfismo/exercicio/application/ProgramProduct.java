@@ -2,7 +2,6 @@ package herancaPolimorfismo.polimorfismo.exercicio.application;
 
 import herancaPolimorfismo.polimorfismo.exercicio.entities.*;
 
-import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
