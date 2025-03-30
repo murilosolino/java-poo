@@ -1,10 +1,10 @@
-package interfaces.application;
+package interfaces.exercicio.application;
 
 
-import interfaces.model.entities.Contract;
-import interfaces.model.entities.Installments;
-import interfaces.model.services.ContractService;
-import interfaces.model.services.PayPalService;
+import interfaces.exercicio.model.entities.Contract;
+import interfaces.exercicio.model.entities.Installments;
+import interfaces.exercicio.model.services.ContractService;
+import interfaces.exercicio.model.services.PayPalService;
 
 import java.text.ParseException;
 import java.time.LocalDate;

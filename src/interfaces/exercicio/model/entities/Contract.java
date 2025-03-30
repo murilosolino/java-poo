@@ -1,4 +1,4 @@
-package interfaces.model.entities;
+package interfaces.exercicio.model.entities;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

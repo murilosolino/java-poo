@@ -1,7 +1,7 @@
-package interfaces.model.services;
+package interfaces.exercicio.model.services;
 
-import interfaces.model.entities.Contract;
-import interfaces.model.entities.Installments;
+import interfaces.exercicio.model.entities.Contract;
+import interfaces.exercicio.model.entities.Installments;
 import java.time.LocalDate;
 
 public class ContractService {

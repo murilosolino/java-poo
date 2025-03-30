@@ -1,6 +1,5 @@
-package interfaces.model.entities;
+package interfaces.exercicio.model.entities;
 
-import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
