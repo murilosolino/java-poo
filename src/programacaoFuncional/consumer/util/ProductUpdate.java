@@ -14,9 +14,9 @@ public class ProductUpdate implements Consumer<Product> {
 /*
 A interface Consumer em Java é usada para representar uma operação que aceita um único argumento de entrada e não retorna nenhum resultado.
 Ela é parte do pacote java.util.function e é uma interface funcional, o que significa que pode ser usada como o destino para uma expressão
-lambda ou referência de método.
+lambda ou referência de metodo.
 
-A vantagem de usar a interface Consumer em vez de criar um método diretamente na classe do objeto é a flexibilidade
+A vantagem de usar a interface Consumer em vez de criar um metodo diretamente na classe do objeto é a flexibilidade
 e a reutilização de código. Aqui estão alguns pontos que destacam essa vantagem:
 
 Separação de Responsabilidades: Usar Consumer permite separar a lógica de processamento dos dados da definição da classe.
