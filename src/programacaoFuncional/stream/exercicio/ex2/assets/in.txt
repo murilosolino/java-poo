@@ -1,0 +1,5 @@
+John Doe,johndoe@example.com,3200.00
+Jane Smith,janesmith@example.com,1900.00
+Alice Johnson,alicejohnson@example.com,1700.00
+Bob Brown,bobbrown@example.com,3500.00
+Charlie Davis,charliedavis@example.com,2800.00
